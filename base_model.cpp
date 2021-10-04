@@ -6,11 +6,11 @@ class BaseAdvertising{
 protected:
     int id;
     int clicks = 0, views = 0;
-    //TODO
 
 public:
     BaseAdvertising(){
-        //TODO
+        clicks = 0;
+        views = 0;
     }
     
     int getClicks(){
@@ -32,8 +32,7 @@ public:
     }
 
     virtual void describeMe(){
-        //TODO
-        cout << "TODO Desc BaseAdvertising" << endl;
+        cout << "I'm the base model for Ad and Advertiser\nincViews() increases the number of views\nincClicks() increases the number of clicks\n\ngetClicks() returns the number of clicks\ngetViews() returns the number of views\n" << endl;
     }
 };
 

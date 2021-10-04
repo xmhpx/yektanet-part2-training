@@ -22,8 +22,7 @@ public:
     }
 
     static string help(){
-        //todo
-        return "TODO Adv HELP";
+        return "Advertiser::help()\n";
     }
 
     static int getTotalClicks(){
@@ -37,8 +36,7 @@ public:
     }
 
     void describeMe(){
-        //todo
-        cout << "TODO Desc Adv" << endl;
+        cout << "I'm the Advertiser class, use me to control the advertisers' info\ngetName() returns the name as a string\nsetName(string new_name) changes the name\n\nhelp() doesn't do anything to be honest\n\ngetTotalClicks() returns sum of the number of clicks over all advertisers\n\nincViews() increases the number of views\nintClicks() increases the number of clicks(also applies it to total clicks)\n\ngetClicks() returns the number of clicks\ngetViews() returns the number of views\n" << endl;
     }
 };
 
