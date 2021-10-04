@@ -7,8 +7,6 @@ using namespace std;
 class Advertiser : public BaseAdvertising{
 private:
     static int totalClicks;
-    int id;
-    int clicks = 0, views = 0;
     string name;
 
 public:
@@ -32,22 +30,9 @@ public:
         return totalClicks;
     }
 
-    int getClicks(){
-        return clicks;
-    }
-
-    int getViews(){
-        return views;
-    }
-
     void incClicks(){
         clicks++;
         totalClicks++;
-        return;
-    }
-
-    void incViews(){
-        views++;
         return;
     }
 

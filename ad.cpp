@@ -7,9 +7,7 @@ using namespace std;
 
 class Ad : public BaseAdvertising{
 private:
-    int id;
     string title, imgUrl, link;
-    int clicks = 0, views = 0;
     Advertiser *adv;
 
 public:
@@ -51,15 +49,7 @@ public:
         //todo
         cout << "TODO Desc Ad" << endl;
     }
-
-    int getClicks(){
-        return clicks;
-    }
-
-    int getViews(){
-        return views;
-    }
-
+    
     void incClicks(){
         clicks++;
         adv->incClicks();
